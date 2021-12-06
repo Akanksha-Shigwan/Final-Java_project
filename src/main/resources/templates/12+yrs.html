@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+    
+<title>Online Toy Shop 12+yrs</title>
+</head>
+<body> 
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/homelogin#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              <a th:href="@{/login}"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+ <div class="container"> 
+   <h1>12+ yrs</h1>
+   <div id="alerts"></div>
+<div class="productcont mt-5">
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/bag.jpg}" class="product-img">
+            <h3 class="productname">Bag</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$-199</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        <img th:src="@{/images/12+yrs/gloves.jpg}" class="product-img">
+            <h3 class="productname">Thanos Gloves</h3>
+            <p>Super Powerfull</p>
+            <p class="price">$8.50 (&#8377;638)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/hasbro.jpg}" class="product-img">
+            <h3 class="productname">Hasbro</h3>
+            <p>Enjoys the game</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/hoverboard.jpg}" class="product-img">
+            <h3 class="productname">Hover Board</h3>
+            <p>Fun traveling</p>
+            <p class="price">$10.74 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/keychain.jpg}" class="product-img">
+            <h3 class="productname">Keychain</h3>
+            <p>Put it to your bag or keys</p>
+            <p class="price">$1.33 (&#8377;99)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/nstrike.jpg}" class="product-img">
+            <h3 class="productname">N-stike Gun</h3>
+            <p>Shot anything</p>
+            <p class="price">$7.51 (&#8377;559)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/pop.jpg}" class="product-img">
+            <h3 class="productname">pop</h3>
+            <p>cute phonecase pop</p>
+            <p class="price">$1.34 (&#8377;100)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/reconnect.jpg}" class="product-img">
+            <h3 class="productname">Reconnect</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/remotedrone.jpg}" class="product-img">
+            <h3 class="productname">Remote Drone</h3>
+            <p>Fly high</p>
+            <p class="price">$13.43 (&#8377;1000)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/sleeppillow.jpg}" class="product-img">
+            <h3 class="productname">Sleep Pillow</h3>
+            <p>Travel friendly</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/slime2.jpg}" class="product-img">
+            <h3 class="productname">Slime</h3>
+            <p>Enjoy it</p>
+            <p class="price">$2.01 (&#8377;150)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/toy gun.jpg}" class="product-img">
+            <h3 class="productname">toy</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/1000pic.jpg}" class="product-img">
+            <h3 class="productname">1000 pieces puzzle</h3>
+            <p>Little Difficult</p>
+            <p class="price">20.15 (&#8377;1500)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/market.jpg}" class="product-img">
+            <h3 class="productname">Market Toy</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/balls.jpg}" class="product-img">
+            <h3 class="productname">Balls</h3>
+            <p>Set of Balls</p>
+            <p class="price">$3.36 (&#8377;250)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/12+yrs/robot.jpg}" class="product-img">
+            <h3 class="productname">Small Robot</h3>
+            <p>Cute and Handy</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart
+          <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/dnoiydox.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:70px">
+</lord-icon>
+          </h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <a href="/checkout"><button id="checkout">Checkout</button></a>
+          </div>
+        </div>
+</div>
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>

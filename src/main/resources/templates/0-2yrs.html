@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+    
+<title>Online Toy Shop 0-2yrs</title>
+</head>
+<body>
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/homelogin#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              <a th:href="@{/login}"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+ <div class="container"> 
+   <h1>0 - 2 yrs Toys</h1>
+   <div id="alerts"></div>
+<div class="productcont mt-5">
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/arirohexagon.jpg}" class="product-img">
+            <h3 class="productname">Ariro Hexagon</h3>
+            <p>Hexagon Shape game</p>
+            <p class="price">$3.36 (&#8377;249)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        <img th:src="@{/images/0-2yrs/babyobject.jpg}" class="product-img">
+            <h3 class="productname">Baby Objects</h3>
+            <p>For baby to learn</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/bamboodinner.jpg}" class="product-img">
+            <h3 class="productname">Dinner Plates</h3>
+            <p>For lunch, dinner</p>
+            <p class="price">$5.38 (&#8377;400)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/chair.jpg}" class="product-img">
+            <h3 class="productname">Baby Chair</h3>
+            <p>For baby use only</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/doll.jpg}" class="product-img">
+            <h3 class="productname">Doll</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$2.69 (&#8377;200)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/duck.jpg}" class="product-img">
+            <h3 class="productname">Water Duck</h3>
+            <p>Bath time play</p>
+            <p class="price">$4.71 (&#8377;350)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/owldinner.jpg}" class="product-img">
+            <h3 class="productname">Owl Dinner Set</h3>
+            <p>For lunch and dinner</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/pengu.jpg}" class="product-img">
+            <h3 class="productname">Pengu</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$6.72 (&#8377;500)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/picturebook.jpg}" class="product-img">
+            <h3 class="productname">Picture Book</h3>
+            <p>Learning things</p>
+            <p class="price">$2.02 (&#8377;150)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/pullingtoy.jpg}" class="product-img">
+            <h3 class="productname">Pulling Toy</h3>
+            <p>Can go anywhere</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/roller.jpg}" class="product-img">
+            <h3 class="productname">Roller</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/teddy.png}" class="product-img">
+            <h3 class="productname">Teddy</h3>
+            <p>Soft Toy</p>
+            <p class="price">$6.05 (&#8377;450)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/teethers.jpg}" class="product-img">
+            <h3 class="productname">Teether</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$6.72 (&#8377;500)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/tent.jpg}" class="product-img">
+            <h3 class="productname">Tent</h3>
+            <p>Little house</p>
+            <p class="price">$$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/toy3.png}" class="product-img">
+            <h3 class="productname">Toy</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$0.40 (&#8377;30)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/0-2yrs/tumbler.jpg}" class="product-img">
+            <h3 class="productname">Twist Game</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">$4.03 (&#8377;300)</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart
+          <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/dnoiydox.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:70px">
+</lord-icon>
+          </h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <a href="/checkout"><button id="checkout">Checkout</button></a>
+          </div>
+        </div>
+</div>
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>

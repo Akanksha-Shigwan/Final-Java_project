@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    
+<title>Online Toy Shop about</title>
+</head>
+<body>
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/homelogin#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              <a th:href="@{/login}"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+  
+ <img th:src="@{/images/about/about1.jpg}" class="img-fluid" alt="Responsive image">
+ <div id="about" class="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+        </div>
+        <div class="info">
+            <div class="about-img1">
+                <img th:src="@{/images/about/baby.jpg}" alt="" width="300" height="300">
+            </div>
+            <div class="info-text">
+                <div>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> We are here to deliver the best for your kid.
+                </div>
+                <div>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> Budget Friendly.
+                </div>
+                <div>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> Best Quality Toy at our Store..
+                </div>
+                <div>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> Biggest offer festival
+                </div>
+                <div>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> All types of Toys Available
+                </div>
+            </div>
+            <div class="about-img2">
+                <img th:src="@{/images/about/toy.jpg}" alt="">
+            </div>
+        </div>
+    </div>
+   
+   <!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #21d192;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fa fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-google-plus white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-linkedin white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Your Childs favorite toys at your Door Steps in your Budget</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="/0-2yrs">0-2 yrs</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/3-7yrs">3-7 yrs</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/7-12yrs">7-12 yrs</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="12+yrs">12+ yrs</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Direct links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="/marvel">Marvels</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/gift">Gift</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/about">About us</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="/home#contact">Contact us</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home mr-3"></i> Navi Mumbai, Juinagar</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="/home"> Online Toy Shop</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>

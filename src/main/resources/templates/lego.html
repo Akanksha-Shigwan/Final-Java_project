@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="stylesheet" th:href="@{/css/cart.css}">
+    
+<title>Online Toy Shop books</title>
+</head>
+<body>
+<!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/homelogin#contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+              <a th:href="@{/login}"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+ <div class="container"> 
+   <h1>Lego</h1>
+   <div id="alerts"></div>
+<div class="productcont mt-5">
+        <div class="product">
+        	<img th:src="@{/images/lego/ariel.jpg}" class="product-img">
+            <h3 class="productname">Ariel</h3>
+            <p>lego producr</p>
+            <p class="price">$-199</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        <img th:src="@{/images/lego/baseplate.jpg}" class="product-img">
+            <h3 class="productname">Base Plate</h3>
+            <p>Lego Product</p>
+            <p class="price">$8.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/batman.jpg}" class="product-img">
+            <h3 class="productname">Batman</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/battle.jpg}" class="product-img">
+            <h3 class="productname">Battle</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/blue bricks.jpg}" class="product-img">
+            <h3 class="productname">Blue Bricks</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/braclet.jpg}" class="product-img">
+            <h3 class="productname">Bracket</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/bricks.jpg}" class="product-img">
+            <h3 class="productname">Bricks</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/bricks2.jpg}" class="product-img">
+            <h3 class="productname">Bricks</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/frame.jpg}" class="product-img">
+            <h3 class="productname">Frame</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/frozen.jpg}" class="product-img">
+            <h3 class="productname">Frozen</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/green bricks.jpg}" class="product-img">
+            <h3 class="productname">Green Bricks</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/harrypotter.jpg}" class="product-img">
+            <h3 class="productname">Harry Potter</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/helicopter.jpg}" class="product-img">
+            <h3 class="productname">Helicopter</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/olaf.jpg}" class="product-img">
+            <h3 class="productname">Olaf</h3>
+            <p>Lego product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/road.jpg}" class="product-img">
+            <h3 class="productname">Road</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+        	<img th:src="@{/images/lego/ariel.jpg}" class="product-img">
+            <h3 class="productname">Transport book</h3>
+            <p>Lego Product</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart
+          <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/dnoiydox.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:70px">
+</lord-icon>
+          </h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <a href="/checkout"><button id="checkout">Checkout</button></a>
+          </div>
+        </div>
+</div>
+
+  
+ 
+<script type="text/javascript" th:src="@{/js/cart.js}"></script>
+</body>
+</html>

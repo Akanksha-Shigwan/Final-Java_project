@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+#nav-bar{
+	position: sticky;
+    top: 0;
+    z-index: 10;
+    scroll-behavior: smooth;
+}
+.navbar-brand img{
+    height: 70px;
+    padding-left: 30px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #007bff!important; 
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.form1{
+    width: 50%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+.form1 input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.form1 label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.container{
+	display: flex;
+}
+.container img{
+	width:"200px";
+	height:"200px";
+}
+.container form{
+	width: 65%;
+}
+.form1 label::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform1 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.form1 input:focus + .label-name .content-name,
+.form1 input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+.form1 input:focus + .label-name::after,
+.form1 input:valid + .label-name::after{
+    transform: translateX(0%);
+}

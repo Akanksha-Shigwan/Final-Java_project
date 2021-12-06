@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" th:href="@{/css/home.css}"> -->
+    <link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+    <link rel="stylesheet" th:href="@{/css/sign.css}">
+
+    <title>Online Toy Shop Rgistration</title>
+  </head>
+  <body>
+  <!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/signup" onclick="myFunction()">Home</a>
+                </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/signup" onclick="myFunction()">About </a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/signup" onclick="myFunction()">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+      <a href="login" class="btn btn-light my-2 my-sm-0 mr-1" type="submit">Login</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+
+<div th:if="${session.message}" th:classappend="${session.message}" class="alert alert-success" role="alert">
+	<p th:text="${session.message}"></p>
+	<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+</div>
+<div class="container mt-5">
+
+
+
+<form th:action="@{/register}" th:object="${user}" method="post">
+<h2>Registration Form</h2>
+  <div class="form1">
+        <input type="text" name="name" autocomplete="off" required>
+        <label for="name" class="label-name">
+            <span class="content-name">Name</span>
+        </label>
+    </div>
+  <div class="form1">
+        <input type="email" name="email" autocomplete="off" pattern=".+@gmail\.com" size="30" required>
+        <label for="email" class="label-name">
+            <span class="content-name">Email</span>
+        </label>
+    </div>
+  <div class="form1">
+        <input type="password" name="password" autocomplete="off" required>
+        <label for="password" class="label-name">
+            <span class="content-name">Password</span>
+        </label>
+    </div>
+  <div class="form1">
+        <input type="tel" name="number" autocomplete="off" required minlength="10" maxlength="10">
+        <label for="number" class="label-name">
+            <span class="content-name">Number</span>
+        </label>
+    </div>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male" required>
+  <label class="form-check-label" for="inlineRadio1">Male</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female" required>
+  <label class="form-check-label" for="inlineRadio2">Female</label>
+</div>
+<div>
+<button type="submit" class="btn btn-primary mt-3">Submit</button>
+<p>If have account <a href="/login">Login</a></p>
+
+</div>
+</form>
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/dxjqoygy.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:250px">
+</lord-icon>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+function myFunction() {
+  alert("Can't access without login");
+}
+</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

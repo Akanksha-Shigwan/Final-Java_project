@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/icon type" th:href="@{/images/favcon.png}">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+
+    <title>Online Toy Shop</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/spxnqpau.json"
+    trigger="loop"
+    colors="primary:#121331,secondary:#08a88a"
+    style="width:250px;height:80px">
+</lord-icon>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/homelogin">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/softtoy" >Soft Toys</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/build" >Building Blocks</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/doll">Dolls</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/cart" >Art & Crafts</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/gift" >Gifts</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/puzzle" >Puzzles</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/book" >Books and magazine</a>
+          </div>
+      </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Age
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/0-2yrs">0-3 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/3-7yrs">3-7 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/7-12yrs">7-12 years</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/12+yrs">12+ years</a>
+          </div>
+      </li>
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Brand
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/marvel" >Marvels</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/lego" >Lego</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/hotwheel" >Hot wheels</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/disney">Disney</a>
+          </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#service">Services</a>
+      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+      <a href="/login" onclick="myFunction()"><i class="fa fa-sign-out" aria-hidden="true" ></i>logout</a>
+    </form>
+  </div>
+  </nav>
+  </section>
+
+<!-- Slider -->
+<div class="bg-video-wrap">
+    <video th:src="@{/images/bg.mov}" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+    <h1>Online Toy Shop</h1>
+  </div>
+
+    
+    <section id="service" >
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="container">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="main">
+        <div class="service">
+          <div class="service-logo">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+          </div>
+          <h4>Free Delivery</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt repudiandae sapiente, et suscipit.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="main">
+        <div class="service">
+          <div class="service-logo">
+            <i class="fa fa-reply" aria-hidden="true"></i>
+          </div>
+          <h4>Easy Return</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt repudiandae sapiente, et suscipit.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="main">
+        <div class="service">
+          <div class="service-logo">
+            <i class="fa fa-inr" aria-hidden="true"><img></i>
+          </div>
+          <h4>Pocket Friendly</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt repudiandae sapiente, et suscipit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
+    
+    <div class="u1">Top Sellers</div>
+       <div class="cont">
+        <div class="wrapper">
+
+  <div class="tool-card d-flex flex-column align-items-center text-center" style="--box-bg: #ccc">
+    <div class="ribbon">
+      <span class="discount-value">best</span>
+        <small>sell</small>
+      </div>
+    <div class="tool-box d-flex justify-content-center align-items-center my-3">
+      <img th:src="@{/images/marvels/thanos.jpg}" alt="" title="">
+    </div>
+    <h5>Thanos Gloves</h5>
+    <p>Here comes the tool description</p>
+  </div>
+
+</div>
+       
+        <div class="wrapper">
+
+  <div class="tool-card d-flex flex-column align-items-center text-center" style="--box-bg: #ccc">
+    <div class="ribbon">
+      <span class="discount-value">best</span>
+        <small>sell</small>
+      </div>
+    <div class="tool-box d-flex justify-content-center align-items-center my-3">
+      <img th:src="@{/images/doll/frozen.jpg}" alt="" title="">
+    </div>
+    <h5>Frozen</h5>
+    <p>Here comes the tool description</p>
+  </div>
+
+</div>
+        
+        <div class="wrapper">
+
+  <div class="tool-card d-flex flex-column align-items-center text-center" style="--box-bg: #ccc">
+    <div class="ribbon">
+      <span class="discount-value">best</span>
+        <small>sell</small>
+      </div>
+    <div class="tool-box d-flex justify-content-center align-items-center my-3">
+      <img th:src="@{/images/soft/hatu.jpg}" alt="" title="">
+    </div>
+    <h5>Hatu</h5>
+    <p>Here comes the tool description</p>
+  </div>
+  
+  <div class="wrapper">
+
+  <div class="tool-card d-flex flex-column align-items-center text-center" style="--box-bg: #ccc">
+    <div class="ribbon">
+      <span class="discount-value">best</span>
+        <small>sell</small>
+        
+      </div>
+    <div class="tool-box d-flex justify-content-center align-items-center my-3">
+      <img th:src="@{/images/disney/mermaid.jpg}" alt="" title="">
+    </div>
+    <h5>Thanos Gloves</h5>
+    <p>Here comes the tool description</p>
+  </div>
+
+</div>
+
+</div>
+   
+    </div>
+    
+    
+    <div class="container2">
+    <h1>Team</h1>
+        <div class="team-box">
+				<div class="img-box">
+					<img th:src="@{/images/disney/bride.jpg}" alt="">
+					<div id="team_shape-1" class="team-shape" style="clip-path: url(&quot;#team-1&quot;);">
+						<svg width="100%" height="100%">
+							<clipPath id="team-1" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 1, 1 0.93, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+					<div class="team-hover-box">
+						<p>Everybody pulled his weight. Gee our old Lasalle ran Those were the days.</p>
+					</div>
+				</div>
+				<h3>Barbie</h3>
+				<p>India</p>
+			</div>
+    <div class="col s6 l3 xl3 animated bounceIn">
+			<div class="team-box">
+				<div class="img-box">
+					<img th:src="@{/images/disney/olaf.jpg}" alt="">
+					<div id="team_shape-1" class="team-shape" style="clip-path: url(&quot;#team-1&quot;);">
+						<svg width="100%" height="100%">
+							<clipPath id="team-1" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 1, 1 0.93, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+					<div class="team-hover-box">
+						<p>Everybody pulled his weight. Gee our old Lasalle ran Those were the days.</p>
+					</div>
+				</div>
+				<h3>Olaf</h3>
+				<p>India</p>
+			</div>
+		</div>
+    <div class="col s6 l3 xl3 animated bounceIn">
+			<div class="team-box">
+				<div class="img-box">
+					<img th:src="@{/images/doll/frozen.jpg}" alt="">
+					<div id="team_shape-1" class="team-shape" style="clip-path: url(&quot;#team-1&quot;);">
+						<svg width="100%" height="100%">
+							<clipPath id="team-1" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 1, 1 0.93, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+					<div class="team-hover-box">
+						<p>Everybody pulled his weight. Gee our old Lasalle ran Those were the days.</p>
+					</div>
+				</div>
+				<h3>Frozen</h3>
+				<p>India</p>
+			</div>
+		</div>
+    <div class="col s6 l3 xl3 animated bounceIn">
+			<div class="team-box">
+				<div class="img-box">
+					<img th:src="@{/images/marvels/hulk.jpg}" alt="">
+					<div id="team_shape-1" class="team-shape" style="clip-path: url(&quot;#team-1&quot;);">
+						<svg width="100%" height="100%">
+							<clipPath id="team-1" clipPathUnits="objectBoundingBox">
+								<polygon points="0 0, 0 1, 1 0.93, 0 0"></polygon>
+							</clipPath>
+						</svg>
+					</div>
+					<div class="team-hover-box">
+						<p>Everybody pulled his weight. Gee our old Lasalle ran Those were the days.</p>
+					</div>
+				</div>
+				<h3>Hulk</h3>
+				<p>India</p>
+			</div>
+		</div>
+  </div>
+  
+    
+    <h1 class="contact-text">Details</h1>
+    <div class="contact-info">
+    
+  <div class="card">
+    <i class="icon fa fa-envelope"></i>
+    <div class="card-content">
+      <h3>Email</h3>
+      <span>akshushigwan2000@gmail.com</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <i class="icon fa fa-phone"></i>
+    <div class="card-content">
+      <h3>Phone Number</h3>
+      <span>+91 78945632210</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <i class="icon fa fa-map-marker"></i>
+    <div class="card-content">
+      <h3>Location</h3>
+      <span>India</span>
+    </div>
+  </div>
+</div>
+    
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fa fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fa fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fa fa-linkedin"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/home"> Online Toy Shop</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!-- Footer -->
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+function myFunction() {
+  alert("Are you Sure You want to logout");
+}
+</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
